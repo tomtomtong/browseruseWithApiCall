@@ -2,6 +2,28 @@
 node_modules/
 .pnpm-store/
 
+# Python
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local app config (may contain API keys); use a template or env for sharing
+config.json
+
+# Chrome user-data dir created by this app for CDP (large, machine-specific)
+chrome_cdp_profile/
+
 # Build output
 dist/
 build/
