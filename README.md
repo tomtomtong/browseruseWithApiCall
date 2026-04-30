@@ -39,6 +39,23 @@ In the UI:
 - enter your task prompt
 - click **Run Task**
 
+## Record browser actions as instructions (no video)
+
+You can capture manual browser actions and reuse them as text instructions for the LLM:
+
+1. Launch Chrome with debugging and keep that browser open.
+2. In the app, click **Start Recording**.
+3. Perform your flow manually in Chrome (clicks, field changes, submits, navigation).
+4. Click **Stop Recording**.
+5. Review steps in **Recorded browser instructions**.
+6. Click **Use Recording in Task** to insert them into the task prompt.
+
+Notes:
+
+- Password field values are stored as `"[REDACTED]"`.
+- Recorded instructions are saved in `config.json` under `recorded_instructions`.
+- Use **Clear Recording** to reset captured steps.
+
 ## Notes
 
 - Config is saved in `config.json`.
